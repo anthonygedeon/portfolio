@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.scss';
+import './index.css';
+import Loader from './components/ComponentFolder/loading';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
+    <div className="app">
+      <Loader />
     </div>
   );
 }
