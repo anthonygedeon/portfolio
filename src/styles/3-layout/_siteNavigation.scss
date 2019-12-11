@@ -1,0 +1,17 @@
+@import "../1-helpers/_variables.scss";
+
+.navigation {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 20%;
+    height: 100vh;
+    background-color: $navigation-sidebar;
+    /* position: fixed; */
+
+    &__menu {
+        width: 1.7rem;
+        position: fixed;
+    }
+}

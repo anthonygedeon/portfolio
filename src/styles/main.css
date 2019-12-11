@@ -6,6 +6,15 @@ h6 span {
   font-family: "Purple Purse", cursive;
 }
 
+.container-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -372,6 +381,27 @@ textarea {
 }
 
 .home__programmer {
-  max-width: 21.7rem;
+  max-width: 21.2rem;
+  height: 70vh;
+}
+
+.navigation {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 20%;
+  height: 100vh;
+  background-color: rgba(43, 43, 43, 0.25);
+  /* position: fixed; */
+}
+
+.navigation__menu {
+  width: 1.7rem;
+  position: fixed;
 }
 /*# sourceMappingURL=main.css.map */
