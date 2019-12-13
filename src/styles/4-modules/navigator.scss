@@ -1,0 +1,12 @@
+@import "../1-helpers/_variables.scss";
+
+.navigator {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: $weight-2;
+    
+    .current-number {
+        margin-left: 1em;
+    }
+}

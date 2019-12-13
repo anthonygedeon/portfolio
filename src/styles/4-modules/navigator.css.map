@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,QAAQ;EACzB,WAAW,EAAE,QAAQ;EACrB,WAAW,ECMJ,GAAG;CDDb;;AATD,AAMI,UANM,CAMN,eAAe,CAAC;EACZ,WAAW,EAAE,GAAG;CACnB",
     "sources": [
-        "navigator.scss"
+        "navigator.scss",
+        "../1-helpers/_variables.scss"
     ],
     "names": [],
     "file": "navigator.css"

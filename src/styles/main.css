@@ -3,7 +3,9 @@ body, html {
 }
 
 h6 span {
-  font-family: "Purple Purse", cursive;
+  font-size: 1em;
+  letter-spacing: .25em;
+  font-family: "Playfair Display", serif;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -372,7 +374,11 @@ textarea {
 }
 
 h2 {
-  font-family: "Purple Purse", cursive;
+  font-family: "Playfair Display", serif;
+}
+
+.bio__des {
+  font-weight: 300;
 }
 
 .container-home {
@@ -425,8 +431,22 @@ h2 {
   margin-right: 0.5em;
 }
 
+.home .bio {
+  position: relative;
+  top: 185px;
+}
+
 .home .bio__heading {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  max-width: 40%;
+  text-transform: uppercase;
+}
+
+.home .bio__des {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  max-width: 81%;
 }
 
 .home__programmer {
@@ -454,5 +474,22 @@ h2 {
 .navigation__menu {
   width: 1.7rem;
   position: fixed;
+}
+
+.navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 500;
+}
+
+.navigator .current-number {
+  margin-left: 1em;
 }
 /*# sourceMappingURL=main.css.map */
