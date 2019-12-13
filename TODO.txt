@@ -4,8 +4,6 @@ FRONTEND TODO
 [] Responsive
 [] Clean, Readable Code
 [] Has upto date projects
-
-BACKEND TODO
 [] Collect information when user finished putting in info from Contact Page
 [] Send HTML email template to users and offer my services
 [] Store Phone Numbers in my phone contacts and automatically fill out their info 
