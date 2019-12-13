@@ -13,5 +13,14 @@
     &__menu {
         width: 1.7rem;
         position: fixed;
+
+        &--show {
+            display: none; 
+            position: absolute; 
+            z-index: 20;
+            height: 100vh;
+            width: 100%;
+            background-color: $menu-out;
+        }
     }
 }
