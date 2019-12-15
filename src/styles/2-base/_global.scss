@@ -7,5 +7,19 @@ body, html {
 h6 span {
     font-size: 1em;
     letter-spacing: .25em;
-    font-family: $purple-purse;
+    font-family: $playfair;
+}
+
+li {
+    
+}
+
+
+a {
+    color: $main-links;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $white;
 }
