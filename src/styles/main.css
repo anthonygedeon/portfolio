@@ -450,7 +450,7 @@ h2 {
 .nav__links .main__item {
   font-family: "Playfair Display", serif;
   font-size: 10vmin;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.2em;
 }
 
 .nav__links .main__item:last-child {
@@ -475,6 +475,9 @@ h2 {
     margin-top: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  .main__item:first-child {
+    margin-top: 1em;
   }
 }
 

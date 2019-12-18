@@ -31,7 +31,8 @@
         .main__item {
             font-family: $playfair;
             font-size: 10vmin;
-            margin-bottom: 0.7em;
+            margin-bottom: 0.2em;
+
 
             &:last-child {
                 margin-bottom: 1em;
@@ -53,4 +54,12 @@
             transform: scale(1);
         }
     }
+
+    .main__item {
+
+        &:first-child {
+            margin-top: 1em;
+        }
+    }
+
 }
