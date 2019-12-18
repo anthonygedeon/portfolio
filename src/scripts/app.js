@@ -13,8 +13,6 @@ function renderMenu(menu) {
     } else {
         menu.style.display = 'block'
         window.addEventListener('scroll', noScroll);
-
-        
     }
 }
 
