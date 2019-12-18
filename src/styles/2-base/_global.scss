@@ -14,12 +14,11 @@ li {
     
 }
 
-
 a {
     color: $main-links;
     text-decoration: none;
-}
 
-a:hover {
-    color: $white;
+    &:hover {
+        color: $white;
+    }
 }

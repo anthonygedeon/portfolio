@@ -1,69 +1,13 @@
 @import "../1-helpers/_variables.scss";
 
-.container-home {
-    height: 100vh;
-    font-family: $roboto;
-    display: grid;
-    grid-template-columns: 1fr 10%;
-
-}
-
 .home {
-    display: grid;
-    grid-template-rows: 3% 1fr 1f 5%;
-    color: $white;
 
-    & :not(.home__programmer) {
-        z-index: 10;
-        padding: 4% 3%;
-    }
-
-    & .logo {
-        height: 1.7rem;
-        width: 1.7rem;
-    }
-
-    .btn {
-        width: 70%;
-        place-self: center;
-        align-self: center;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &-notify {
-            font-size: 28px;
-            font-weight: $weight-2;
-            text-transform: uppercase;
-            margin-right: 0.5em;
-        }
-    }
-    
-    .bio {
-        position: relative;
-        top: 185px;
-
-        &__heading {
-            font-size: 2rem;
-            line-height: 2rem;
-            max-width: 40%;
-            text-transform: uppercase;
-        }
-
-        &__des {
-            font-size: 1rem;
-            line-height: 1.3rem;
-            max-width: 81%;
-        }
-    }
-
-    &__programmer {
-        max-width: 21.2rem;
-        height: 70vh;
-        position: absolute;
-        z-index: $z-index-0;
+    &__logo {
+        position: fixed;
+        z-index: $z-index-1;
+        height: 4vmin;
+        fill: $white;
+        margin: 2vh calc(4vmin / 2);
+        cursor: $pointer;
     }
 }
-
-
