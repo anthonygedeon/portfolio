@@ -1,23 +1,2 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 @import "../1-helpers/_variables.scss";
-
-h2 {font-family: $playfair;}
-
-.navigation__menu--show {
-    text-transform: uppercase;
-    
-    .page a {
-        font-family: $playfair;
-        font-size: 3.4rem;
-        letter-spacing: .07em;
-    }
-    
-    
-    .social {
-        font-family: $roboto;
-        
-    }
-}
-
-
-
-.bio__des {font-weight: $weight-0;}
