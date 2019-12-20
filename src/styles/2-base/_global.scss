@@ -1,24 +1,18 @@
 @import "../1-helpers/_variables.scss";
+@import "../1-helpers/_mixins.scss";
 
-body, html {
-    background-color: $black;
+html, body {
+    background-color: $main-clr;
 }
 
-h6 span {
-    font-size: 1em;
-    letter-spacing: .25em;
-    font-family: $playfair;
-}
+div h1 {
+    width: min-content;
+    font-size: 8vmin;
+    font-weight: $weight-3;
+    font-family: $main-font;
+    margin: 0.2em 0;
 
-li {
-    
-}
-
-a {
-    color: $main-links;
-    text-decoration: none;
-
-    &:hover {
-        color: $white;
+    @include desktop() {
+        font-size: 14vmin;
     }
 }

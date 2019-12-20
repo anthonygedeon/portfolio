@@ -1,10 +1,67 @@
-@mixin horizontal-center() {
+@import "../1-helpers/_variables.scss";
+
+@mixin flex {
+    display: -webkit-flex;
     display: flex;
+}
+
+//---------------------------------------------
+//-----------    Centering    ----------------- 
+//---------------------------------------------
+@mixin horizontal-center() {
+    @include flex;
     justify-content: center;
 }
 
 @mixin vertical-center() {
-    display: flex;
+    @include flex;
     justify-content: center;
     align-items: center;
+}
+
+
+//---------------------------------------------
+//-----------    Fonts    --------------------- 
+//---------------------------------------------
+@mixin get-font($weight, $size) {
+    
+}
+
+//---------------------------------------------
+//-----------    Border-radius    ------------- 
+//---------------------------------------------
+@mixin borders($box: false) {
+    @if $box {
+        border-radius: $borders;
+    } @else {
+        border-radius: $border-projects;
+    }
+
+}
+
+//---------------------------------------------
+//-----------    Breakpoints    --------------- 
+//---------------------------------------------
+@mixin small-screen() {
+    @media only screen and (min-width: $small-screen) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media only screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media only screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin big-screens() {
+    @media only screen and (min-width: $big-screens) {
+        @content;
+    }
 }
