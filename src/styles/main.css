@@ -386,43 +386,20 @@ textarea {
 
 .home {
   width: 100%;
-  height: 80vh;
-  display: block;
-  margin: 8vmin auto;
-}
-
-.home__right-triangle {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.home--width {
+  height: 100vh;
   max-width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
-@media only screen and (min-width: 10240px) {
-  .home--width {
-    max-width: 20%;
-  }
-}
-
-.home__bio > .bio__number {
-  width: 40vmin;
-  margin-top: 9rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .home__bio > .bio__number {
-    margin-top: 7vmin;
-  }
-}
-
-.home__bio .bio__text {
-  font-size: 3.5vmin;
-  font-family: "Roboto", sans-serif, serif, monospace, cursive, fantasy;
-  line-height: 1.5em;
-  font-weight: 300;
-  width: 80%;
+.home__bio {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
 }
 /*# sourceMappingURL=main.css.map */
