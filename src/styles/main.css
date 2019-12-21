@@ -472,7 +472,13 @@ textarea {
 }
 
 .home__logo {
-  width: 10vmin;
+  width: 14vmin;
+}
+
+@media only screen and (min-width: 768px) {
+  .home__logo {
+    width: 10vmin;
+  }
 }
 
 .home__nav-bar {
@@ -514,42 +520,74 @@ textarea {
   font-family: "Nunito", sans-serif;
   position: relative;
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
-  height: 100vh;
-  border: 1px solid;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+.portfolio:not(h5) {
+  height: 60rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[7];
-      grid-template-rows: repeat(7, 1fr);
+  -ms-grid-columns: (minmax(40%, 7fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40%, 7fr));
+  -ms-grid-rows: (150px)[2];
+      grid-template-rows: repeat(2, 150px);
+  grid-gap: 30px;
 }
 
-.main {
-  border: 1px solid;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[8];
-      grid-template-rows: repeat(8, 1fr);
-  grid-gap: 20px;
+.portfolio:not(h5) .project {
+  background-color: black;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.main .project {
-  background-color: blue;
+.portfolio:not(h5) .project__sub-heading {
+  color: #fff;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 3vmin;
 }
 
-.main .project--medium {
+.portfolio:not(h5) .project__live-view {
+  background-color: #FFE300;
+  border: none;
+  width: 5rem;
+  height: 1.5rem;
+  font-weight: 800;
+}
+
+.portfolio:not(h5) .project--medium {
+  grid-row: span 3;
+  background-image: url(../../../build/images/project-1.jpg);
+  background-position: 50% 41%;
+  background-size: cover;
+}
+
+.portfolio:not(h5) .project--large {
   grid-row: span 4;
+  background-image: url(../../../build/images/project-1.jpg);
+  background-position: 50% 41%;
+  background-size: cover;
 }
 
-.main .project--large {
-  grid-row: span 8;
-}
-
-.main .project--small {
-  grid-row: span 2;
+.portfolio:not(h5) .project--small {
+  grid-row: span 3;
+  background-image: url(../../../build/images/project-1.jpg);
+  background-position: 50% 41%;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

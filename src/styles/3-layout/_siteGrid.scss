@@ -6,12 +6,12 @@
     font-family: $main-font;
     position: relative;
     width: 100%;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
-    height: 100vh;
-    border: 1px solid;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
 
+    @include small-screen() {
+        & {
+            max-width: 80%;
+        }
+    }
 }

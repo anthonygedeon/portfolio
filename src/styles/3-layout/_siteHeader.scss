@@ -44,7 +44,13 @@
     }
 
     &__logo {
-        width: 10vmin;
+        width: 14vmin;
+
+        @include tablet() {
+            & {
+                width: 10vmin;
+            }
+        }
     }
 
     &__nav-bar {

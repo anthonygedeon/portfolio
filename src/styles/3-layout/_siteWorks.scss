@@ -1,43 +1,54 @@
 @import "../1-helpers/_variables.scss";
 @import "../1-helpers/_mixins.scss";
 
-.main {
-    border: 1px solid;
+.portfolio:not(h5) {
+    height: 60rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 7fr));
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 30px;
 
     .project {
-        background-color: blue;
-        // &__img {
-        //     height: 100%;
-        //     object-fit: cover;
-        //     // position: absolute;
-        // }
+        background-color: rgb(0, 0, 0);
+        padding: 2em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
 
-        // &__bio {
-        //     position: absolute;
-        // }
+        &__sub-heading {
+            color: $main-clr;
+            margin-top: 1rem;
+            font-weight: $weight-4;
+            font-size: 3vmin;
+        }
 
-        // &__sub-heading {
-        //     color: blue;
-        // }
-
-        // &__live-view {
-            
-        // }
+        &__live-view {
+            background-color: $yellow-accent;
+            border: none;
+            width: 5rem;
+            height: 1.5rem;
+            font-weight: $weight-5;
+        }
 
         &--medium { 
-            grid-row: span 4;
+            grid-row: span 3;
+            background-image: url(../../../build/images/project-1.jpg);
+            background-position: 50% 41%;
+            background-size: cover;
         }
 
         &--large {
-            grid-row: span 8;
+            grid-row: span 4;
+            background-image: url(../../../build/images/project-1.jpg);
+            background-position: 50% 41%;
+            background-size: cover;
         }
 
         &--small {
-            grid-row: span 2
+            grid-row: span 3;
+            background-image: url(../../../build/images/project-1.jpg);
+            background-position: 50% 41%;
+            background-size: cover;
         }
 
     }
