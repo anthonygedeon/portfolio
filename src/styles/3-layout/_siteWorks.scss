@@ -1,2 +1,24 @@
 @import "../1-helpers/_variables.scss";
+@import "../1-helpers/_mixins.scss";
 
+.main {
+
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    .project {
+
+        &__img {
+            height: 17rem;
+            object-fit: cover;
+            
+        }
+
+        &__sub-headings {
+            position: relative;
+            top: 0;
+        }
+    }
+}

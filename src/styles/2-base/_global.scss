@@ -1,18 +1,59 @@
 @import "../1-helpers/_variables.scss";
 @import "../1-helpers/_mixins.scss";
 
+
 html, body {
     background-color: $main-clr;
 }
 
-div h1 {
-    width: min-content;
-    font-size: 8vmin;
-    font-weight: $weight-3;
-    font-family: $main-font;
-    margin: 0.2em 0;
+div h5 {
+    margin-bottom: 2.5em;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: $weight-5;
+    color: $icon-clr;
+    text-align: center;
+}
 
-    @include desktop() {
-        font-size: 14vmin;
+img {
+    width: 100%;
+    position: relative;
+}
+
+a {
+    color: $blue-accent;
+    text-decoration: none;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: $weight-5;
+
+    &:first-child {
+        margin-right: 2.5em;
+    }
+
+    &:last-child {
+        margin-left: 2.5em;
+    }
+
+}
+
+a i {
+    font-size: 1rem;
+    cursor: pointer;
+    
+    @include tablet() {
+        font-size: 1.5rem;
+    }
+
+}
+
+a:not(:last-child) {
+    margin-right: 1.6em;
+
+    @include big-screens() {
+        margin-right: 2em;
     }
 }
+

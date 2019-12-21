@@ -1,10 +1,10 @@
 //-------------------------------------
 //-----------    Fonts   -------------- 
 //-------------------------------------
-$main-font: 'Roboto', sans-serif, serif, monospace, cursive, fantasy;
+$main-font: 'Nunito', sans-serif;
 
 //-------------------------------------
-//-----------  Z-index  --------------- 
+//-----------  Z-index  ---------------
 //-------------------------------------
 $z-index-99999: -999999;
 $z-index-0: 0;
@@ -19,7 +19,9 @@ $z-index-4: 40;
 $weight-0: 300;
 $weight-1: 400;
 $weight-2: 500;
-$weight-3: 700;
+$weight-3: 600;
+$weight-4: 700;
+$weight-5: 800;
 
 //-------------------------------------
 //-----------    Spacing    ----------- 
@@ -40,11 +42,10 @@ $big-screens: 1280px;
 //-------------------------------------
 $main-clr: #fff;
 $font-clr: #000000;
-$sub-heading-clr: #A7ABB3;
-$lighter-black: #202020;
-$gray-accent: #F9F9F9;
-$blue-accent:#1979F5;
-$accent-gradient: linear-gradient(298.81deg, #2084FF 0%, #0052D4 100%);
+$icon-clr: #CFCFCF;
+$lighter-gray: #EDEDED;
+$yellow-accent: #FFE300;
+$blue-accent: #007FFF;
 
 //------------------------------------
 //-----------    Border-radius    ---- 

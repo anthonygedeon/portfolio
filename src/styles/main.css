@@ -1,21 +1,57 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 html, body {
   background-color: #fff;
 }
 
-div h1 {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  font-size: 8vmin;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif, serif, monospace, cursive, fantasy;
-  margin: 0.2em 0;
+div h5 {
+  margin-bottom: 2.5em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #CFCFCF;
+  text-align: center;
 }
 
-@media only screen and (min-width: 10240px) {
-  div h1 {
-    font-size: 14vmin;
+img {
+  width: 100%;
+  position: relative;
+}
+
+a {
+  color: #007FFF;
+  text-decoration: none;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+nav a:first-child {
+  margin-right: 2.5em;
+}
+
+nav a:last-child {
+  margin-left: 2.5em;
+}
+
+a i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  a i {
+    font-size: 1.5rem;
+  }
+}
+
+a:not(:last-child) {
+  margin-right: 1.6em;
+}
+
+@media only screen and (min-width: 1280px) {
+  a:not(:last-child) {
+    margin-right: 2em;
   }
 }
 
@@ -384,22 +420,129 @@ textarea {
   padding: 0.2em 0;
 }
 
-.home {
-  width: 100%;
-  height: 100vh;
-  max-width: 90%;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+.header .banner {
+  text-align: center;
+  margin: 2.8rem 0;
 }
 
-.home__bio {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
+.header .banner__heading {
+  width: 43vmin;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: 4vmin;
+  margin: 0 auto;
+  margin-bottom: 0.6em;
+}
+
+.header .banner__position {
+  color: #007FFF;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .banner__heading {
+    width: 73vmin;
+    font-weight: 700;
+    line-height: 1.4em;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.6em;
+  }
+}
+
+.home {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.home__logo {
+  width: 10vmin;
+}
+
+.home__nav-bar {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+
+.home__nav {
+  display: inline;
+}
+
+.home__nav a {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .home__nav a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home__nav {
+    display: none;
+  }
+  .home__nav-bar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .home__nav-bar {
+    display: none;
+  }
+}
+
+.container {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  border: 1px solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.main .project__img {
+  height: 17rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .project__sub-headings {
+  position: relative;
+  top: 0;
 }
 /*# sourceMappingURL=main.css.map */
