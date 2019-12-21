@@ -2,17 +2,46 @@
 @import "../1-helpers/_mixins.scss";
 
 
-html, body {
+html, 
+body {
     background-color: $main-clr;
 }
 
-div h5 {
+h5 {
     margin-bottom: 2.5em;
     font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: $weight-5;
     color: $icon-clr;
     text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include small-screen() {
+        ul {
+            max-width: 4vmin;
+
+        }
+    }
+}
+
+
+ul li {
+    display: inline-block;
+    background-color: $blue-accent;
+    color: $main-clr;
+    padding: 0.6em;
+    margin: 0 1em 1em 0;
+}
+
+main {
+    margin-bottom: 4em;
 }
 
 img {
@@ -45,7 +74,7 @@ a i {
     cursor: pointer;
     
     @include tablet() {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
 }

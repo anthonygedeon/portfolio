@@ -1,14 +1,48 @@
-html, body {
+html,
+body {
   background-color: #fff;
 }
 
-div h5 {
+h5 {
   margin-bottom: 2.5em;
   font-size: 0.7rem;
   text-transform: uppercase;
   font-weight: 800;
   color: #CFCFCF;
   text-align: center;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  ul ul {
+    max-width: 4vmin;
+  }
+}
+
+ul li {
+  display: inline-block;
+  background-color: #007FFF;
+  color: #fff;
+  padding: 0.6em;
+  margin: 0 1em 1em 0;
+}
+
+main {
+  margin-bottom: 4em;
 }
 
 img {
@@ -42,7 +76,7 @@ a i {
 
 @media only screen and (min-width: 768px) {
   a i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -61,7 +95,7 @@ a:not(:last-child) {
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4 h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -473,6 +507,7 @@ textarea {
 
 .home__logo {
   width: 14vmin;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -530,7 +565,56 @@ textarea {
   }
 }
 
-.portfolio:not(h5) {
+.about__me {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr (minmax(auto-fit, 2fr))[2];
+      grid-template-columns: 1fr repeat(2, minmax(auto-fit, 2fr));
+  grid-column-gap: 60px;
+}
+
+.about__me .info {
+  margin-bottom: 2em;
+}
+
+.about__me .info__heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.about__me .info__text {
+  font-size: 4vmin;
+  line-height: 1.7rem;
+  max-width: 50rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .about__me .info__heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  .about__me .info__text {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 10240px) {
+  .about__me .info__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  .about__me .info__text {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    max-width: 60rem;
+  }
+}
+
+.portfolio {
   height: 60rem;
   display: -ms-grid;
   display: grid;
@@ -541,7 +625,7 @@ textarea {
   grid-gap: 30px;
 }
 
-.portfolio:not(h5) .project {
+.portfolio .project {
   background-color: black;
   padding: 2em;
   display: -webkit-box;
@@ -555,14 +639,14 @@ textarea {
           align-items: flex-end;
 }
 
-.portfolio:not(h5) .project__sub-heading {
+.portfolio .project__sub-heading {
   color: #fff;
   margin-top: 1rem;
   font-weight: 700;
   font-size: 3vmin;
 }
 
-.portfolio:not(h5) .project__live-view {
+.portfolio .project__live-view {
   background-color: #FFE300;
   border: none;
   width: 5rem;
@@ -570,23 +654,23 @@ textarea {
   font-weight: 800;
 }
 
-.portfolio:not(h5) .project--medium {
+.portfolio .project--medium {
   grid-row: span 3;
   background-image: url(../../../build/images/project-1.jpg);
   background-position: 50% 41%;
   background-size: cover;
 }
 
-.portfolio:not(h5) .project--large {
+.portfolio .project--large {
   grid-row: span 4;
-  background-image: url(../../../build/images/project-1.jpg);
+  background-image: url(../../../build/images/project-2.jpg);
   background-position: 50% 41%;
   background-size: cover;
 }
 
-.portfolio:not(h5) .project--small {
+.portfolio .project--small {
   grid-row: span 3;
-  background-image: url(../../../build/images/project-1.jpg);
+  background-image: url(../../../build/images/project-3.jpg);
   background-position: 50% 41%;
   background-size: cover;
 }

@@ -1,0 +1,52 @@
+@import "../1-helpers/_variables.scss";
+@import "../1-helpers/_mixins.scss";
+
+.about__me {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto-fit, 2fr));
+    grid-column-gap: 60px;    
+
+    .info {
+        margin-bottom: 2em;
+
+        &__heading {
+            font-size: 1.2rem;
+            font-weight: $weight-4;
+            margin-bottom: 0.5em;
+        }
+
+        &__text {
+            font-size: 4vmin;
+            line-height: 1.7rem;
+            max-width: 50rem;
+        }
+
+        @include small-screen() {
+            &__heading {
+                font-size: 1.3rem;
+                font-weight: $weight-4;
+                margin-bottom: 0.5em;
+            }
+    
+            &__text {
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+        }
+
+        @include desktop() {
+            &__heading {
+                font-size: 2rem;
+                font-weight: $weight-4;
+                margin-bottom: 0.5em;
+            }
+    
+            &__text {
+                font-size: 1.5rem;
+                line-height: 2.4rem;
+                max-width: 60rem;
+            }
+        }
+    }
+
+}

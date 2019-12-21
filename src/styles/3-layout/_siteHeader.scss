@@ -45,7 +45,7 @@
 
     &__logo {
         width: 14vmin;
-
+        cursor: pointer;
         @include tablet() {
             & {
                 width: 10vmin;
