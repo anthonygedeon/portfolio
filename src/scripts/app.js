@@ -6,4 +6,4 @@ function slideOut() {
 }
 
 menuBar.addEventListener('click', slideOut);
-menuBar.addEventListener('touch', slideOut);
+menuBar.addEventListener('touchstart', slideOut);
