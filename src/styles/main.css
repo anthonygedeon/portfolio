@@ -496,6 +496,23 @@ textarea {
           align-items: center;
 }
 
+.home__nav-anime {
+  position: absolute;
+  left: -9999px;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #fff;
+  height: 3rem;
+  height: 1rem;
+  background: #007FFF;
+  padding: 1rem;
+  width: 99%;
+}
+
+.home__nav-anime a {
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .home {
     -webkit-box-pack: center;

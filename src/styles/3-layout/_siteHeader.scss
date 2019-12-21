@@ -39,6 +39,22 @@
     justify-content: space-between;
     align-items: center;
 
+    &__nav-anime {
+        position: absolute;
+        left: -9999px;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        background-color: $main-clr;
+        height: 3rem;
+        height: 1rem;
+        background: $blue-accent;
+        padding: 1rem;
+        width: 99%;
+
+        a {
+            color: white;
+        }
+    }
+
     @include phone() {
         justify-content: center;
     }
