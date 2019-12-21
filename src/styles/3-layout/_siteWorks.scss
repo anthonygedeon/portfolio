@@ -2,23 +2,44 @@
 @import "../1-helpers/_mixins.scss";
 
 .main {
-
+    border: 1px solid;
     display: grid;
-    grid-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 20px;
 
     .project {
+        background-color: blue;
+        // &__img {
+        //     height: 100%;
+        //     object-fit: cover;
+        //     // position: absolute;
+        // }
 
-        &__img {
-            height: 17rem;
-            object-fit: cover;
+        // &__bio {
+        //     position: absolute;
+        // }
+
+        // &__sub-heading {
+        //     color: blue;
+        // }
+
+        // &__live-view {
             
+        // }
+
+        &--medium { 
+            grid-row: span 4;
         }
 
-        &__sub-headings {
-            position: relative;
-            top: 0;
+        &--large {
+            grid-row: span 8;
         }
+
+        &--small {
+            grid-row: span 2
+        }
+
     }
 }
+    

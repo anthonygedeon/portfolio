@@ -12,6 +12,7 @@ div h5 {
 }
 
 img {
+  height: 50px;
   width: 100%;
   position: relative;
 }
@@ -526,23 +527,29 @@ textarea {
 }
 
 .main {
+  border: 1px solid;
   display: -ms-grid;
   display: grid;
-  grid-gap: 50px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+  grid-gap: 20px;
 }
 
-.main .project__img {
-  height: 17rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+.main .project {
+  background-color: blue;
 }
 
-.main .project__sub-headings {
-  position: relative;
-  top: 0;
+.main .project--medium {
+  grid-row: span 4;
+}
+
+.main .project--large {
+  grid-row: span 8;
+}
+
+.main .project--small {
+  grid-row: span 2;
 }
 /*# sourceMappingURL=main.css.map */
