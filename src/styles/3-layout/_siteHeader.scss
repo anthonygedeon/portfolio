@@ -48,7 +48,11 @@
         height: 1rem;
         background: $blue-accent;
         padding: 1rem;
-        width: 99%;
+        width: 75%;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         a {
             color: white;
@@ -72,7 +76,8 @@
     &__nav-bar {
         cursor: pointer;
         position: absolute;
-        left: 0;
+        right: 0;
+        transform: scale(1.1);;
     }
 
     &__nav {
