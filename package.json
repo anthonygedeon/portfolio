@@ -19,7 +19,6 @@
   "dependencies": {},
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
-    "gsap": "^3.0.4",
     "scss": "^0.2.4"
   }
 }
