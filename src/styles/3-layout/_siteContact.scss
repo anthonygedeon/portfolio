@@ -1,0 +1,76 @@
+@import "../1-helpers/_variables.scss";
+@import "../1-helpers/_mixins.scss";
+
+.form {
+    margin-bottom: 3em;
+
+    label {
+        font-size: 3vmin;
+        font-weight: $weight-5;
+        text-transform: uppercase;
+        margin-bottom: 1.4em;
+
+        @include tablet() {
+            font-size: 0.7rem;
+        }
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $icon-clr;
+        padding-bottom: 1em;
+        margin-bottom: 1.5em;
+        color: $font-clr;
+        font-size: 1.3rem;
+
+        &::placeholder {
+            font-weight: $weight-4;
+            color: $lighter-gray;
+            font-size: 2vmin;
+        }
+    }
+
+    textarea {
+        resize: none;
+        border: none;
+        border-bottom: 1px solid $icon-clr;
+
+        &::placeholder {
+            font-weight: $weight-4;
+            color: $lighter-gray;
+            font-size: 2vmin;
+        }
+    }
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-column-gap: 20px;
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2em;
+            justify-content: flex-start;
+
+            @include tablet() {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .contact {
+
+        &__text {
+            margin: 1em 0;
+            line-height: 1.5em;
+        }
+
+        i {
+            font-size: 1.4em;
+        }
+    }
+
+}
