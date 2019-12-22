@@ -1,13 +1,27 @@
 FRONTEND TODO
-[] Create HTML email
 [] Website is A+ optimized
 [] Responsive
 [] Clean, Readable Code
-[] Has upto date projects
+[] Has updated projects
 [] Collect information when user finished putting in info from Contact Page
-[] Send HTML email template to users and offer my services
-[] Store Phone Numbers in my phone contacts and automatically fill out their info 
 [] Check emails from users and favorite them
+[] remove link text and switch to services
+[] add onscroll animations for projects and below
+[] add support for older browsers
+[] organize scss files
+[] download webpack and use that to bundle Code
+[] put download link for the resume icon
+[] fix about section so that its a 2 col 2 row for tablet and up and 1 col for mobile
+[] fix Contact section so that its a 2 col 2 row for tablet and up and 1 col for mobile 
+[] fix project section so that its a 2 col 2 row for tablet and up and 1 col for mobile
+[] tabindex should not be > 0
+[] hover animations for button
+[] add send icon for contact form
+[] Add favicon
+[] Easy to implement new projects
+[] make the services sections
+[] fix the margins for each section
+[] replace text with meaningful text
 
 NICE TO HAVE
 [] Google Analytics
