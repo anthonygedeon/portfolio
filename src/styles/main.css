@@ -579,6 +579,13 @@ textarea {
   }
 }
 
+.bottom-line {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translate(0, -6px);
+          transform: translate(0, -6px);
+}
+
 .container {
   font-family: "Nunito", sans-serif;
   position: relative;

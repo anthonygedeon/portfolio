@@ -1,9 +1,4 @@
-const menuBar = document.querySelector('.home__nav-bar');
+import {steps, menuBar} from './anime.js';
 
-function slideOut() {
-    const bar = document.querySelector('.home__nav-anime');
-    bar.style.left = '-19px';
-}
-
-menuBar.addEventListener('click', slideOut);
-menuBar.addEventListener('touchstart', slideOut);
+menuBar.addEventListener('click', steps);
+menuBar.addEventListener('touchstart', steps);
