@@ -9,8 +9,13 @@ body {
 
 [tabindex]:focus {
   outline-width: 2px;
-  outline-style: solid;
+  outline-style: dotted;
   outline-offset: .3rem;
+}
+
+main,
+article {
+  position: relative;
 }
 
 h5 {
@@ -20,6 +25,19 @@ h5 {
   font-weight: 800;
   color: #CFCFCF;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  h5 {
+    position: absolute;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    left: -60px;
+    top: 22px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 
 ul {
@@ -587,6 +605,9 @@ textarea {
   .home__nav-bar {
     display: none;
   }
+  .home__nav-anime {
+    display: none;
+  }
 }
 
 .bottom-line {
@@ -597,7 +618,7 @@ textarea {
 }
 
 .home__nav--anime {
-  left: -19px;
+  left: -25px;
 }
 
 .project__live-view--btn:hover {
@@ -703,25 +724,25 @@ textarea {
 
 .form input::-webkit-input-placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 
 .form input:-ms-input-placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 
 .form input::-ms-input-placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 
 .form input::placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 
@@ -733,25 +754,25 @@ textarea {
 
 .form textarea::-webkit-input-placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 
 .form textarea:-ms-input-placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 
 .form textarea::-ms-input-placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 
 .form textarea::placeholder {
   font-weight: 700;
-  color: #EDEDED;
+  color: #d8d8d8;
   font-size: 2vmin;
 }
 

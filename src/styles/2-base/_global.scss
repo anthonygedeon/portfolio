@@ -12,8 +12,13 @@ body {
 
 [tabindex]:focus {
     outline-width: 2px;
-    outline-style: solid;
+    outline-style: dotted;
     outline-offset: .3rem;
+}
+
+main, 
+article {
+    position: relative;
 }
 
 h5 {
@@ -23,6 +28,14 @@ h5 {
     font-weight: $weight-5;
     color: $icon-clr;
     text-align: center;
+
+    @include tablet() {
+        position: absolute;
+        writing-mode: vertical-rl;
+        left: -60px;
+        top: 22px;
+        transform: rotate(180deg);
+    }
 }
 
 ul {

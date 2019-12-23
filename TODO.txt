@@ -27,4 +27,5 @@ DONE
 [*] add onscroll animations for projects and below
 [*] hover animations for button
 [*] remove link text and switch to services
+[*] have the text vertical for each section
 
