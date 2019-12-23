@@ -8,9 +8,9 @@ body {
 }
 
 [tabindex]:focus {
-  outline-width: 3px;
+  outline-width: 2px;
   outline-style: solid;
-  outline-offset: .6rem;
+  outline-offset: .3rem;
 }
 
 h5 {
@@ -598,6 +598,17 @@ textarea {
 
 .home__nav--anime {
   left: -19px;
+}
+
+.project__live-view--btn:hover {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+}
+
+.nav__link:hover {
+  color: #3694eb;
 }
 
 .container {

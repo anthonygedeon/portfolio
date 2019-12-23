@@ -5,15 +5,12 @@ FRONTEND TODO
 [] Has updated projects
 [] Collect information when user finished putting in info from Contact Page
 [] Check emails from users and favorite them
-[] remove link text and switch to services
-[] add onscroll animations for projects and below
 [] add support for older browsers
 [] organize scss files
 [] download webpack and use that to bundle Code
 [] fix about section so that its a 2 col 2 row for tablet and up and 1 col for mobile
 [] fix Contact section so that its a 2 col 2 row for tablet and up and 1 col for mobile 
 [] fix project section so that its a 2 col 2 row for tablet and up and 1 col for mobile
-[] hover animations for button
 [] add send icon for contact form
 [] Easy to implement new projects
 [] make the services sections
@@ -27,4 +24,7 @@ DONE
 [*] Add favicon
 [*] put download link for the resume icon
 [*] tabindex should not be > 0
+[*] add onscroll animations for projects and below
+[*] hover animations for button
+[*] remove link text and switch to services
 

@@ -123,3 +123,17 @@
     left: -19px;
     
 }
+
+.project__live-view--btn {
+
+    &:hover {
+        transition: all 0.1s ease-in-out;
+        transform: skew(-10deg);
+    }
+}
+
+.nav__link {
+    &:hover {
+        color: rgb(54, 148, 235);
+    }
+}
