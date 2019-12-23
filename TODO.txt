@@ -13,7 +13,6 @@ FRONTEND TODO
 [] fix about section so that its a 2 col 2 row for tablet and up and 1 col for mobile
 [] fix Contact section so that its a 2 col 2 row for tablet and up and 1 col for mobile 
 [] fix project section so that its a 2 col 2 row for tablet and up and 1 col for mobile
-[] tabindex should not be > 0
 [] hover animations for button
 [] add send icon for contact form
 [] Easy to implement new projects
@@ -27,4 +26,5 @@ NICE TO HAVE
 DONE
 [*] Add favicon
 [*] put download link for the resume icon
+[*] tabindex should not be > 0
 

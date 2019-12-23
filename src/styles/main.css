@@ -1,6 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   background-color: #fff;
+}
+
+[tabindex]:focus {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-offset: .6rem;
 }
 
 h5 {
@@ -499,8 +509,8 @@ textarea {
 .home__nav-anime {
   position: absolute;
   left: -9999px;
-  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: #fff;
   height: 3rem;
   height: 1rem;
@@ -580,10 +590,14 @@ textarea {
 }
 
 .bottom-line {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transform: translate(0, -6px);
           transform: translate(0, -6px);
+}
+
+.home__nav--anime {
+  left: -19px;
 }
 
 .container {

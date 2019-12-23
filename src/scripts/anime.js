@@ -4,32 +4,9 @@ const bottomLine = document.querySelectorAll('line')[1];
 const menuBar = document.querySelector('.home__nav-bar');
 const bar = document.querySelector('.home__nav-anime');
 
-let barPosition = '-19px';
+menuBar.addEventListener('click', () => {
+    bar.classList.toggle('home__nav--anime');
+    bottomLine.classList.toggle('bottom-line');
+});
 
-function collapse() {
-    bottomLine.classList.add('bottom-line')
-
-    if (bottomLine.className.baseVal == 'bottom-line') {
-        console.log('remove')
-        bottomLine.classList.remove('bottom-line')
-    }
-}
-
-function slideOut() {
-    bar.style.left = barPosition;
-}
-
-export function reverse() {
-    
-}
-
-function steps() {
-    sleep(100).then(() => {
-        collapse()
-    })
-    .then(() => {
-        slideOut()
-    });
-}
-
-export {steps, menuBar}
+export {}

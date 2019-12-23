@@ -42,7 +42,7 @@
     &__nav-anime {
         position: absolute;
         left: -9999px;
-        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
         background-color: $main-clr;
         height: 3rem;
         height: 1rem;
@@ -112,7 +112,14 @@
     
 }
 
+// animation.scss
+
 .bottom-line {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     transform: translate(0, -6px);
+}
+
+.home__nav--anime {
+    left: -19px;
+    
 }

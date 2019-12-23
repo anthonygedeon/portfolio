@@ -1,10 +1,19 @@
 @import "../1-helpers/_variables.scss";
 @import "../1-helpers/_mixins.scss";
 
+html {
+    scroll-behavior: smooth;
+}
 
 html, 
 body {
     background-color: $main-clr;
+}
+
+[tabindex]:focus {
+    outline-width: 3px;
+    outline-style: solid;
+    outline-offset: .6rem;
 }
 
 h5 {
