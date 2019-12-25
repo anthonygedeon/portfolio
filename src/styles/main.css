@@ -817,11 +817,21 @@ textarea {
   height: 60rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(40%, 7fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(40%, 7fr));
-  -ms-grid-rows: (150px)[2];
-      grid-template-rows: repeat(2, 150px);
-  grid-gap: 30px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    -ms-grid-columns: (minmax(40%, 7fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40%, 7fr));
+    -ms-grid-rows: (150px)[2];
+        grid-template-rows: repeat(2, 150px);
+    grid-gap: 30px;
+  }
 }
 
 .portfolio .project {
@@ -854,24 +864,46 @@ textarea {
 }
 
 .portfolio .project--medium {
-  grid-row: span 3;
+  grid-row: span 2;
   background-image: url(../../../build/images/project-1.jpg);
   background-position: 50% 41%;
   background-size: cover;
 }
 
 .portfolio .project--large {
-  grid-row: span 4;
+  grid-row: span 14;
   background-image: url(../../../build/images/project-2.jpg);
   background-position: 50% 41%;
   background-size: cover;
 }
 
-.portfolio .project--small {
-  grid-row: span 3;
+.portfolio .project--large:nth-child(2) {
+  grid-row: span 13;
   background-image: url(../../../build/images/project-3.jpg);
   background-position: 50% 41%;
   background-size: cover;
+}
+
+.portfolio .project--small {
+  grid-row: span 11;
+  background-image: url(../../../build/images/project-4.jpg);
+  background-position: 50% 100%;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio .project--medium {
+    grid-row: span 3;
+  }
+  .portfolio .project--large {
+    grid-row: span 4;
+  }
+  .portfolio .project--large:nth-child(2) {
+    grid-row: span 4;
+  }
+  .portfolio .project--small {
+    grid-row: span 3;
+  }
 }
 
 .footer {
