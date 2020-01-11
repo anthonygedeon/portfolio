@@ -6,6 +6,11 @@
     grid-template-columns: 1fr repeat(2, minmax(auto-fit, 2fr));
     grid-column-gap: 60px;    
 
+    @include tablet() {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 40px; 
+    }
+
     .info {
         margin-bottom: 2em;
 
