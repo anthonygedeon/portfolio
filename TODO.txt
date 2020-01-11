@@ -8,17 +8,18 @@ FRONTEND TODO
 [] add support for older browsers
 [] organize scss files
 [] download webpack and use that to bundle Code
-[] fix about section so that its a 2 col 2 row for tablet and up and 1 col for mobile
-[] fix Contact section so that its a 2 col 2 row for tablet and up and 1 col for mobile 
 [] Easy to implement new projects
 [] make the services sections
 [] fix the margins for each section
-[] add send icon for contact form
 
 NICE TO HAVE
 [] 
 
 DONE
+[*] fix Contact section so that its a 2 col 2 row for tablet and up and 1 col for mobile 
+[*] button for contact page is Responsive
+[*] fix about section so that its a 2 col 2 row for tablet and up and 1 col for mobile
+[*] add send icon for contact form
 [*] Logo needs to be in the center
 [*] replace text with meaningful text
 [*] Add favicon
