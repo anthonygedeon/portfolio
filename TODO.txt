@@ -10,7 +10,6 @@ FRONTEND TODO
 [] download webpack and use that to bundle Code
 [] fix about section so that its a 2 col 2 row for tablet and up and 1 col for mobile
 [] fix Contact section so that its a 2 col 2 row for tablet and up and 1 col for mobile 
-[] fix project section so that its a 2 col 2 row for tablet and up and 1 col for mobile
 [] add send icon for contact form
 [] Easy to implement new projects
 [] make the services sections
@@ -28,4 +27,5 @@ DONE
 [*] hover animations for button
 [*] remove link text and switch to services
 [*] have the text vertical for each section
+[*] fix project section so that its a 2 col 2 row for tablet and up and 1 col for mobile
 
