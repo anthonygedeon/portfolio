@@ -15,6 +15,7 @@ FRONTEND TODO
 [] make the services sections
 [] fix the margins for each section
 [] replace text with meaningful text
+[] Logo needs to be in the center
 
 NICE TO HAVE
 [] Google Analytics
