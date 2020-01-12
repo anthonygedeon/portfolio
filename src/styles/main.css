@@ -900,7 +900,7 @@ textarea {
 }
 
 .portfolio .project {
-  background-color: black;
+  background-color: #fff;
   padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -914,7 +914,7 @@ textarea {
 }
 
 .portfolio .project__sub-heading {
-  color: #fff;
+  color: #000000;
   margin-top: 1rem;
   font-weight: 700;
   font-size: 3vmin;
@@ -930,30 +930,38 @@ textarea {
 
 .portfolio .project--medium {
   grid-row: span 2;
-  background-image: url(../../../build/images/project-1.jpg);
+  background-image: url(../../../build/images/pomotroid.png);
   background-position: 50% 41%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .portfolio .project--large {
   grid-row: span 14;
-  background-image: url(../../../build/images/project-2.jpg);
+  background-image: url(../../../build/images/tic-tac-toe.png);
   background-position: 50% 41%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .portfolio .project--large:nth-child(2) {
   grid-row: span 13;
-  background-image: url(../../../build/images/project-3.jpg);
+  background-image: url(../../../build/images/habit-tracker-v1.png);
   background-position: 50% 41%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .portfolio .project--small {
   grid-row: span 11;
-  background-image: url(../../../build/images/project-4.jpg);
+  background-image: url(../../../build/images/calculator-ui-ver2.png);
   background-position: 50% 100%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.portfolio .project .live {
+  color: #000000;
 }
 
 @media only screen and (min-width: 768px) {
