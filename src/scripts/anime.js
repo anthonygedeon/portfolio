@@ -6,6 +6,3 @@ menuBar.addEventListener('click', () => {
     bar.classList.toggle('home__nav--anime');
     bottomLine.classList.toggle('bottom-line');
 });
-
-
-
