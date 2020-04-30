@@ -171,27 +171,31 @@
 
     .header {
         height: inherit;
-        margin-bottom: 5em;
 
         &__heading {
             font-size: 2.5rem;
         }
 
+        &__link--resume {
+            margin-left: 0;
+        }
+
         &__name {
-            display: inline;
+            display: block;
         }
 
         &__text {
             margin-bottom: 2em;
-            max-width: none;
+            max-width: 44%;
         }
         
         &__categories {
-            display: none;
+            display: block;
+            margin-bottom: 25rem;
         }
 
         &__intro {
-            position: static;
+            position: fixed;
         }
 
         &__social-media {
@@ -206,6 +210,12 @@
     .container {
         max-width: 85%;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)) !important;
+    }
+
+    .interview {
+        &__details {
+            max-width: 60%;
+        }
     }
 }
 

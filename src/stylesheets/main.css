@@ -589,23 +589,26 @@ body {
 @media screen and (max-width: 1030px) {
   .header {
     height: inherit;
-    margin-bottom: 5em;
   }
   .header__heading {
     font-size: 2.5rem;
   }
+  .header__link--resume {
+    margin-left: 0;
+  }
   .header__name {
-    display: inline;
+    display: block;
   }
   .header__text {
     margin-bottom: 2em;
-    max-width: none;
+    max-width: 44%;
   }
   .header__categories {
-    display: none;
+    display: block;
+    margin-bottom: 25rem;
   }
   .header__intro {
-    position: static;
+    position: fixed;
   }
   .header__social-media {
     margin-top: 0;
@@ -617,6 +620,9 @@ body {
     max-width: 85%;
     -ms-grid-columns: (minmax(330px, 1fr))[auto-fit] !important;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)) !important;
+  }
+  .interview__details {
+    max-width: 60%;
   }
 }
 
