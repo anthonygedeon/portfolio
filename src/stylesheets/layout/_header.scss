@@ -174,7 +174,9 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen 
+    and (min-width: 700px) 
+    and (max-width: 1000px) {
 
     .header {
         height: inherit;
@@ -216,7 +218,7 @@
 
     .container {
         max-width: 85%;
-        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)) !important;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
     }
 }
 
