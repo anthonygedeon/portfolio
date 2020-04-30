@@ -552,7 +552,7 @@ body {
   }
   .header {
     height: inherit;
-    margin: 5em 0;
+    margin: 3em 0 5em 0;
   }
   .header__heading {
     font-size: 3rem;
@@ -577,6 +577,9 @@ body {
   }
   .header__profile {
     margin-right: 1em;
+  }
+  .main-content__heading {
+    display: block !important;
   }
   .interview__details {
     max-width: 10rem;
@@ -640,6 +643,16 @@ body {
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
   height: 100vh;
+}
+
+.main-content__heading {
+  text-align: left;
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2em;
+  display: none;
 }
 
 .main-content__projects {
