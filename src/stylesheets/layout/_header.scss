@@ -46,6 +46,7 @@
     
     &__intro {
         position: fixed;
+        z-index: -1;
     }
 
     &__heading {
@@ -213,7 +214,12 @@
 
         &__heading {
             display: block !important;
+            grid-column-start: 1;
         }
+    }
+
+    .talk {
+        grid-column: 1 / 1
     }
 
     .container {
