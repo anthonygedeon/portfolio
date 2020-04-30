@@ -439,6 +439,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -454,6 +458,10 @@ body {
           align-items: center;
 }
 
+.header__media--middle {
+  margin: 0 2em;
+}
+
 .header__link {
   color: var(--primary-color);
   font-size: 14px;
@@ -462,10 +470,6 @@ body {
 
 .header__share-link {
   width: 16px;
-}
-
-.header__icon--github {
-  margin-left: 2em;
 }
 
 .header__profile {
