@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(0, 0%, 8%);
+}
+
+
+/**
+   * Basic styles for links
+   */
+a {
+	text-decoration: none;
+}
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1300px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+	'small': 320px,
+	'medium': 768px,
+	'large': 1024px,
+) !default;
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide CSS variables.
+// -----------------------------------------------------------------------------
+:root {
+	--primary-font: 'Gothic A1', sans-serif;
+	--font-bold: 700;
+	--font-semi-bold: 600;
+	--font-regular: 400;
+
+	--component-heading: 1.5rem;
+	--component-sub-heading: 0.7rem;
+	--component-body-text: 0.875rem;
+
+	--primary-color: hsl(0, 0%, 100%);
+	--component-bg-color: hsl(240, 3%, 13%);
+	--component-text-color: hsl(240, 0%, 58%);
+}
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+	font: normal 125% / 1.4 var(--primary-font);
+}
+
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------

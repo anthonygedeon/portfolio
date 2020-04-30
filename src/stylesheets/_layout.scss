@@ -1,5 +1,19 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
+// Grid
+// -----------------------------------------------------------------------------
+.container {
+	max-width: 1300px;
+	width: 100%;
+	margin: 4.5em auto 0 auto;
+
+	display: grid;
+	justify-content: start;
+	align-items: start;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+// -----------------------------------------------------------------------------
+// Header
 // -----------------------------------------------------------------------------
 .header {
     flex: 1 0 0;
@@ -15,8 +29,6 @@
         align-items: center;
         margin-top: 15em;
     }
-
-    
 
     &__media {
         display: flex;
@@ -59,11 +71,11 @@
 
     &__categories {
         margin-left: none;
-        list-style: none;
         padding: 0;
     }
-
+    
     &__category {
+        display: block;
         cursor: pointer;
         counter-increment: custom;
         color: var(--component-text-color);
@@ -111,6 +123,41 @@
     }
 }
 
+// -----------------------------------------------------------------------------
+// Main
+// -----------------------------------------------------------------------------
+.main-content {
+    flex: 1 0 0;
+    height: 100vh;
+
+    &__heading {
+        text-align: left;
+        color: var(--primary-color);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 2em;
+        display: none;
+    }
+
+    &__projects {
+        margin-bottom: 4em;
+    }
+
+    &__talks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 0.5rem;
+    }
+
+    &__interviews {
+        margin-top: 2em;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Media Queries - remove soon
+// -----------------------------------------------------------------------------
 @media screen and(max-width: 500px) {
 
     .container {
@@ -219,7 +266,7 @@
     }
 
     .talk {
-        grid-column: 1 / 1
+        grid-column: 1 / 1;
     }
 
     .container {

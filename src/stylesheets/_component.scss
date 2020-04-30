@@ -1,0 +1,179 @@
+// -----------------------------------------------------------------------------
+// Projects
+// -----------------------------------------------------------------------------
+.project {
+    margin-bottom: 0.5em;
+    display: block;
+    padding: 1.75em;
+    color: inherit;
+    background-color: var(--component-bg-color);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__technologies {
+        margin: 0;
+        font-size: var(--component-sub-heading);
+        color: var(--primary-color);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    &__title {
+        margin-top: 0.25em;
+        margin-bottom: 0;
+        color: var(--primary-color);
+        text-transform: capitalize;
+        font-size: var(--component-heading);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &__description {
+        color: var(--component-text-color);
+        font-size: var(--component-body-text);
+        margin: 1em 0 1em 0;
+    }
+
+    &__github-stars {
+        margin: 0;
+        font-size: 12px;
+        color: var(--component-text-color);
+
+        display: flex;
+        align-items: center;
+    }
+    
+    // &__star {
+    //     width: 14px;
+    //     margin-right: 0.75em;
+    // }
+}
+
+// -----------------------------------------------------------------------------
+// Talks
+// -----------------------------------------------------------------------------
+.talk {
+    height: 20rem;
+    padding: 1.75em;
+    color: inherit;
+    background-color: var(--component-bg-color);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--primary-color);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__host {
+        margin: 0;
+        font-size: var(--component-sub-heading);
+        color: var(--primary-color);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__location, 
+    &__date {
+        color: var(--component-text-color);
+        font-size: var(--component-body-text);
+        margin: 0;
+    }
+
+    &__location {
+        margin-top: 1em;
+        margin-bottom: 0.25em;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        font-size: var(--component-heading);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &__info {
+        display: inline-block;
+        color: var(--primary-color);
+        font-size: var(--component-body-text);
+        margin: 0 1em 0 0;
+        cursor: pointer;
+        
+        .header__share-link {
+            vertical-align: middle;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// YouTube
+// -----------------------------------------------------------------------------
+.interview {
+    margin-bottom: 0.5em;
+    display: block;
+    padding: 1.75em 0;
+    color: inherit;
+
+    display: flex;
+    align-items: center;
+    
+
+    &:last-child {
+        margin-bottom: 5em;
+    }
+
+    &__type {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        background-color: var(--component-bg-color);
+        margin-right: 1em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        color: var(--primary-color);
+        font-size: var(--component-heading);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &__description {
+        color: var(--component-text-color);
+        font-size: var(--component-body-text);
+        margin: 1em 0 1em 0;
+    }
+
+    &__date {
+        color: var(--primary-color);
+        font-size: var(--component-body-text);
+        margin: 0;
+    }
+
+    &__video {
+        margin-left: .25em;
+        width: 35px;
+        stroke-width: 1px;
+        stroke: var(--primary-color);
+    }
+}
