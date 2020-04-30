@@ -592,7 +592,7 @@ body {
     margin-bottom: 5em;
   }
   .header__heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .header__name {
     display: inline;
@@ -623,6 +623,9 @@ body {
 @media screen and (max-width: 1080px) {
   .container {
     max-width: 95%;
+  }
+  .header__heading {
+    font-size: 3rem;
   }
 }
 

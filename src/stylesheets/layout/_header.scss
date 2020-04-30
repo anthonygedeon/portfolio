@@ -174,7 +174,7 @@
         margin-bottom: 5em;
 
         &__heading {
-            font-size: 3rem;
+            font-size: 2.5rem;
 
         }
 
@@ -213,5 +213,12 @@
 @media screen and (max-width: 1080px) {
     .container {
         max-width: 95%;
+    }
+
+    .header {
+
+        &__heading {
+            font-size: 3rem;
+        }
     }
 }
