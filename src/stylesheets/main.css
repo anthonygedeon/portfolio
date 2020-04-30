@@ -547,12 +547,12 @@ body {
 
 @media screen and (max-width: 400px) {
   .container {
-    max-width: 85%;
+    max-width: 90% !important;
     margin: 0 auto;
   }
   .header {
     height: inherit;
-    margin-bottom: 5em;
+    margin: 5em 0;
   }
   .header__heading {
     font-size: 3rem;
@@ -560,8 +560,14 @@ body {
   .header__text {
     margin-bottom: 2em;
   }
+  .header__link--resume {
+    margin-left: 0;
+  }
   .header__categories {
     display: none;
+  }
+  .header__media--middle {
+    margin: 0 1em;
   }
   .header__intro {
     position: static;

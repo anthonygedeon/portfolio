@@ -111,13 +111,13 @@
 @media screen and(max-width: 400px) {
 
     .container {
-        max-width: 85%;
+        max-width: 90% !important;
         margin: 0 auto;
     }
 
     .header {
         height: inherit;
-        margin-bottom: 5em;
+        margin: 5em 0;
 
         &__heading {
             font-size: 3rem;
@@ -127,8 +127,16 @@
             margin-bottom: 2em;
         }
         
+        &__link--resume {
+            margin-left: 0;
+        }
+        
         &__categories {
             display: none;
+        }
+
+        &__media--middle {
+            margin: 0 1em;
         }
 
         &__intro {
