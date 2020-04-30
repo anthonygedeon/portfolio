@@ -1,0 +1,52 @@
+.interview {
+    margin-bottom: 0.5em;
+    display: block;
+    padding: 1.75em 0;
+    color: inherit;
+
+    display: flex;
+    align-items: center;
+    
+
+    &:last-child {
+        margin-bottom: 5em;
+    }
+
+    &__type {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        background-color: var(--component-bg-color);
+        margin-right: 1em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        color: var(--primary-color);
+        font-size: var(--component-heading);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &__description {
+        color: var(--component-text-color);
+        font-size: var(--component-body-text);
+        margin: 1em 0 1em 0;
+    }
+
+    &__date {
+        color: var(--primary-color);
+        font-size: var(--component-body-text);
+        margin: 0;
+    }
+}

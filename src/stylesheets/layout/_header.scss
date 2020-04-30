@@ -1,0 +1,204 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+    flex: 1 0 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__social-media {
+        display: flex;
+        align-items: center;
+        margin-top: 15em;
+    }
+
+    &__media {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        color: var(--primary-color);
+        font-size: 14px;
+        margin: 0 1em;
+    }
+
+    &__share-link {
+        width: 16px;
+    }
+
+    &__icon--github {
+        margin-left: 2em;
+    }
+
+    &__profile {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin-right: 2em;
+    }
+    
+    &__intro {
+        position: fixed;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-weight: var(--font-bold);
+        line-height: 4rem;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    &__categories {
+        margin-left: none;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__category {
+        cursor: pointer;
+        counter-increment: custom;
+        color: var(--component-text-color);
+        font-weight: var(--font-bold);
+        font-size: 0.625rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 4em;
+
+        &::before {
+            content: "0" counter(custom) " ";  
+        }
+
+        &--active {
+            color: var(--primary-color);
+        }
+    }
+
+    &__indicator {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 1em;
+        width: 1.5rem;
+        height: 1px;
+        background-color: var(--component-text-color);
+        transition: width 0.3s ease;
+
+        &--active {
+            background-color: var(--primary-color);
+            width: 3rem;
+        }
+    }
+
+    &__text {
+        font-weight: var(--font-regular);
+        color: var(--component-text-color);
+        font-size: var(--component-body-text);
+        line-height: 28px;
+        max-width: 26rem;
+        margin: 2rem 0 5rem 0;
+    }
+
+    &__name {
+        display: block;
+    }
+}
+
+@media screen and(max-width: 400px) {
+
+    .container {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .header {
+        height: inherit;
+        margin-bottom: 5em;
+
+        &__heading {
+            font-size: 3rem;
+        }
+
+        &__text {
+            margin-bottom: 2em;
+        }
+        
+        &__categories {
+            display: none;
+        }
+
+        &__intro {
+            position: static;
+        }
+
+        &__social-media {
+            margin-top: 0;
+        }
+
+        &__profile {
+            margin-right: 1em;
+        }
+    }
+
+    .interview {
+
+        &__details {
+            max-width: 10rem;
+        }
+
+        &__type svg {
+            width: 24px;
+        }
+    }
+}
+
+@media screen and(max-width: 1020px) {
+
+    .header {
+        height: inherit;
+        margin-bottom: 5em;
+
+        &__heading {
+            font-size: 3rem;
+
+        }
+
+        &__name {
+            display: inline;
+        }
+
+        &__text {
+            margin-bottom: 2em;
+            max-width: none;
+        }
+        
+        &__categories {
+            display: none;
+        }
+
+        &__intro {
+            position: static;
+        }
+
+        &__social-media {
+            margin-top: 0;
+        }
+
+        &__profile {
+            margin-right: 1em;
+        }
+    }
+
+    .container {
+        max-width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)) !important;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        max-width: 95%;
+    }
+}

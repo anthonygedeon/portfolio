@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1300px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide CSS variables.
+// -----------------------------------------------------------------------------
+
+:root {
+  // Vairables for fonts
+  --primary-font: 'Gothic A1', sans-serif;
+  --font-bold: 700;
+  --font-semi-bold: 600;
+  --font-regular: 400;
+
+  // Variables for text size of each component
+  --component-heading: 1.5rem;
+  --component-sub-heading: 0.7rem;
+  --component-body-text: 0.875rem;
+
+  // Colors
+  --primary-color: hsl(0, 0%, 100%);
+  --component-bg-color: hsl(240, 3%, 13%);
+  --component-text-color: hsl(240, 0%, 58%);
+}

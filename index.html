@@ -1,184 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anthony</title>
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./src/stylesheets/main.css">
+		<title>Anthony Gedeon</title>
+	</head>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./build/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./build/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./build/images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+	<body>
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,800&display=swap" rel="stylesheet">
+		<div class="container">
+			<header class="header">
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="./src/styles/main.css"> 
-  </head>
+                <div class="header__intro">
+                    <h1 class="header__heading">Hello, I’m <span class="header__name">Sarah Dayan.</span> </h1>
+                    <p class="header__text">I’m a Staff Software Engineer currently working as Tech Lead of the Doc Squad at Algolia. I mostly do front-end development, and I’m a Vue.js and CSS nerd. I can't shut up about test-driven development and utility-first CSS. I also share what I learn on my blog frontstuff.io, or at meetups and conferences.</p>
+                    
+                    <ol class="header__categories">
+                        <li class="header__category header__category--active"><span class="header__indicator header__indicator--active"></span>Projects</li>
+                        <li class="header__category"><span class="header__indicator"></span>Talks</li>
+                        <li class="header__category"><span class="header__indicator"></span>Interviews</li>
+                    </ol>
 
-  <body>
+                    <div class="header__social-media">
+                        <img class="header__profile" src="https://sarahdayan.dev/assets/static/sarah-dayan.d042d20.111694ebd57deef3130aff719cb07222.jpg" alt="Profile picture">
+                        <div class="header__media">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="16px" fill="#ffffff" class="header__icon"><title>Twitter icon</title><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z"></path></svg>
+                            <a class="header__link" href="https://twitter.com/ant_devs">Twitter</a>
+                            <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing">
+                        </div>
+                        <div class="header__media">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="16px" fill="#ffffff" class="header__icon header__icon--github"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                            <a class="header__link" href="https://github.com/anthonygedeon">Github</a>
+                            <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing">
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-    <div class="container">
-      <header class="header">
-        <div class="home">
-          <a class="home__nav-bar">
-            <svg class="menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#007FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-              <line class="top-line" x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </a>
-          <nav class="home__nav home__nav--left" >
-            <a class="nav__link" tabindex="0" href="#works">Works</a>
-            <a class="nav__link" tabindex="0" href="#about">About</a>
-          </nav>
-          <svg class="home__logo" viewBox="0 0 95 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.5342 48.9303C30.3728 52.6496 37.5825 45.6669 39.9634 43.2484C40.4679 42.7359 40.9268 42.2114 41.3724 41.702C43.0299 39.8073 44.5037 38.1225 47.4564 38.0525C50.3129 37.9847 51.1866 39.1667 52.6943 41.2062C53.164 41.8417 53.6953 42.5604 54.3672 43.3505C57.1958 46.6765 62.198 50.8986 68.6066 49.4605C75.0152 48.0223 84.2691 36.6402 84.2691 36.6402C84.2691 36.6402 93.8045 26.2048 94.793 21.3806C96.0634 14.0124 89.5358 7.51583 89.5358 7.51583C89.5358 7.51583 82.7149 1.32374 79.0771 0.41113C73.4657 -0.996624 67.0113 1.48034 64.3794 3.77021C61.4946 6.28015 54.7964 12.6837 55.7484 19.4124C56.228 22.8021 64.3794 29.4031 64.3794 29.4031C64.3794 29.4031 67.988 32.8234 67.988 35.4313C67.988 38.0392 66.7643 38.7844 64.774 39.1248C63.2116 39.3921 62.4121 38.4159 61.6034 37.4285C61.3819 37.1581 61.1598 36.8869 60.9211 36.6402C55.2124 30.7384 50.626 26.8588 47.162 27.0085C44.056 26.9152 40.541 29.901 34.6096 35.9661C34.5781 35.9982 34.5456 36.0315 34.5122 36.0658C33.4453 37.1586 31.3962 39.2576 29.7677 39.0843C28.0215 38.7466 25.9614 37.2483 26.7275 34.4417C27.4937 31.6351 33.954 26.2963 33.954 26.2963C33.954 26.2963 38.4264 22.4187 38.601 17.5553C38.7756 12.6919 34.6096 8.03477 34.6096 8.03477C34.6096 8.03477 28.8634 0.837437 24.1704 4.72184C19.4774 8.60624 25.7697 13.775 25.7697 13.775C25.7697 13.775 28.4775 15.7979 28.4775 18.1858C28.4775 21.8504 25.2057 24.5969 23.5342 25.6419C22.0482 26.5709 18.8689 28.1227 16.0457 27.0085C14.4733 26.3879 13.2482 24.9876 11.7309 22.5515C11.4372 22.0799 11.1314 21.406 10.7885 20.6505C9.36011 17.503 7.28821 12.9375 2.76487 15.6685C-2.8443 19.0552 2.92602 27.3226 2.92602 27.3226C2.92602 27.3226 10.1157 36.5004 13.3859 40.0245C16.97 43.887 20.0899 47.0571 23.5342 48.9303ZM79.8522 12.0006L79.882 12.025C82.3246 14.0271 83.3441 15.0728 83.795 18.1205C84.246 21.1683 81.6684 24.0981 81.6684 24.0981C81.6684 24.0981 78.6291 27.4468 75.5684 27.4468C72.5078 27.4468 69.4567 24.0981 69.4567 24.0981C69.4567 24.0981 67.0018 21.4679 66.7102 18.6868C66.4185 15.9056 68.3391 13.441 68.3391 13.441C68.3391 13.441 70.4132 10.0526 73.491 9.67506C76.5562 9.29904 77.4323 10.0171 79.8522 12.0006Z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="142.5" y1="25" x2="101.285" y2="-53.308" gradientUnits="userSpaceOnUse"><stop stop-color="#2084FF"/><stop offset="1" stop-color="#0052D4"/></linearGradient></defs></svg>
-          
-          <div class="home__nav-anime">
-            <a class="nav__link" href="#works">Works</a>
-            <a class="nav__link" href="#about">About</a>
-            <a class="nav__link" href="#services">Services</a>
-            <a class="nav__link" href="#contacts">Contacts</a>
-          </div>
+            <main class="main-content">
 
-          <nav  class="home__nav home__nav--right" >
-            <a class="nav__link" tabindex="0" href="#services">Services</a>
-            <a class="nav__link" tabindex="0" href="#contacts">Contacts</a>
-          </nav>
+                <section class="main-content__projects">
+                    <a href="#" class="project">
+                        <h1 class="project__technologies">JavaScript</h1>
+                        <h2 class="project__title">Dinero.js</h2>
+                        <p class="project__description">An immutable library to create, calculate and format money.</p>
+                        <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt=""> 3,569</p>
+                    </a>
+                    <a href="#" class="project">
+                        <h1 class="project__technologies">JavaScript</h1>
+                        <h2 class="project__title">Browserstore.js</h2>
+                        <p class="project__description">Persist data into various browser-based storage systems.</p>
+                        <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="">53</p>
+                    </a>
+                    <a href="#" class="project">
+                        <h1 class="project__technologies">TypeScript</h1>
+                        <h2 class="project__title">Snippets.js</h2>
+                        <p class="project__description">Extract code snippets from source files.</p>
+                        <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="">16</p>
+                    </a>
+                </section>
+
+                <section class="main-content__talks">
+
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">Jsconf.be</h2>
+                            <p class="talk__location">Online</p>
+                            <p class="talk__date">June 22, 2020</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">Learning from the Mistakes of a v1</h2>
+                        </div>
+                    </article>
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">FRONTEND LOVE MEETUP</h2>
+                            <p class="talk__location">Online</p>
+                            <p class="talk__date">March 18, 2020</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">Why Javascript Numbers Are Weird (And How to Fix It)</h2>
+                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                            <p class="talk__info">Slides <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                        </div>
+                    </article>
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">VUE.JS AMSTERDAM</h2>
+                            <p class="talk__location">Amsterdam — The Netherlands</p>
+                            <p class="talk__date">February 20, 2020</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">Test-Driven Development with Vue.js</h2>
+                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                            <p class="talk__info">Slides <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                        </div>
+                    </article>
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">DOTCSS</h2>
+                            <p class="talk__location">Paris — France</p>
+                            <p class="talk__date">December 3, 2019</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">In Defense of Utility-First CSS</h2>
+                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                            <p class="talk__info">Slides <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                        </div>
+                    </article>
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">VUECONF TORONTO</h2>
+                            <p class="talk__location">Toronto — Canada</p>
+                            <p class="talk__date">November 10, 2019</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">Test-Driven Development with Vue.js</h2>
+                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                            <p class="talk__info">Slides <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                        </div>
+                    </article>
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">VUE.JS PARIS #20</h2>
+                            <p class="talk__location">Paris — France</p>
+                            <p class="talk__date">June 4, 2019</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">An Introduction to TDD with Vue.js</h2>
+                            <p class="talk__info">Slides <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                        </div>
+                    </article>
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">JAMSTACK PARIS</h2>
+                            <p class="talk__location">Paris — France</p>
+                            <p class="talk__date">May 27, 2019</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">Scaling With(out) Middleman</h2>
+                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                        </div>
+                    </article>
+                    <article class="talk">
+                        <div class="talk__description">
+                            <h2 class="talk__host">VUE.JS PARIS #19</h2>
+                            <p class="talk__location">Paris — France</p>
+                            <p class="talk__date">January 14, 2019</p>
+                        </div>
+                        <div class="talk__share">
+                            <h2 class="talk__title">Building an Interactive Showcase with Vue.js & Vue InstantSearch</h2>
+                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                            <p class="talk__info">Slides <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
+                        </div>
+                    </article>
+
+                </section>
+
+                <section class="main-content__interviews">
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                    <a href="#" class="interview">
+                        <div class="interview__type">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
+                        </div>
+                        <div class="interview__details">
+                            <h1 class="interview__title">Test Driven Development</h1>
+                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
+                            <p class="interview__date">April 5, 2020</p>
+                        </div>
+                    </a>
+                </section>
+
+            </main>
         </div>
 
-        <div class="banner">
-          <h2 class="banner__heading">Hey! I'm Anthony, a <wbr><strong class="banner__position">Web Developer</strong></h2>
-          <a href="https://github.com/anthonygedeon" rel="noopener" target="_blank" tabindex="0"><i class="fab fa-github-square"></i></a>
-          <a href="https://www.linkedin.com/in/anthony-gedeon/" rel="noopener" target="_blank" tabindex="0"><i class="fab fa-linkedin"></i></a>
-          <a href="./build/images/frontend-resume.pdf"  tabindex="0" download><i class="fas fa-file-download"></i></a>
-        </div>
-      </header>
-
-      <main id="works" class="main">
-        <h5 class="main__heading">works</h5>
-
-        <div class="portfolio">
-          <div class="project project--medium" data-delay="0s">
-            <div class="project__bio">
-              <a class="live" target="_blank" href="https://anthonygedeon.github.io/pomodoro/"><button class="project__live-view project__live-view--btn" tabindex="0">Live</button> </a>
-              <h3 class="project__sub-heading">PomoTroid</h3>
-            </div>
-          </div>
-
-          <div class="project project--large" data-delay="0.5s">
-            
-            <div class="project__bio">
-              <a class="live" target="_blank" href="https://anthonygedeon.github.io/habit-tracker/"><button class="project__live-view project__live-view--btn" tabindex="0">Live</button></a>
-              <h3 class="project__sub-heading">Better Me</h3>
-            </div> 
-          
-          </div>
-
-          <div class="project project--large" data-delay="0.7s">
-            
-            <div class="project__bio">
-              <a class="live" target="_blank" href="https://anthonygedeon.github.io/tic-tac-toe/"><button class="project__live-view project__live-view--btn" tabindex="0">Live</button></a>
-              <h3 class="project__sub-heading">Tic-Tac-Toe</h3>
-            </div>
-          
-          </div>
-
-          <div class="project project--small" data-delay="1s">
-            
-            <div class="project__bio">
-              <a class="live" target="_blank" href="https://anthonygedeon.github.io/calculator/"><button class="project__live-view project__live-view--btn" tabindex="0">Live</button></a>
-              <h3 class="project__sub-heading">CalcU</h3>
-            </div>
-          </div>
-        </div>
-
-      </main>
-
-      <article id="about" class="about">
-        <h5 class="about__heading">About</h5>
-
-        <section class="about__me">
-
-        <div class="left-info">
-          <article class="info">
-            <h3 class="info__heading">About Me</h3>
-            <p class="info__text"><strong>Hard-working </strong>web developer with a flair for creating elegant solutions in the least amount of time. Developed an saas webapp, note-taking tool for college students, habit tracker webapp with 20 users, and a full stack manga website that uses the lastest technologies.</p>
-          </article>
-
-          <article class="info" id="services">
-            <h3 class="info__heading">Services</h3>
-            <p class="info__text">Front End Development is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites.</p>
-          </article>
-        </div>
-
-          <article class="info info--right">
-            <h3 class="info__heading">Skills</h3>
-            <ul class="skills">
-              <li class="skills__tech">Html</li>
-              <li class="skills__tech">Css</li>
-              <li class="skills__tech">Scss</li>
-              <li class="skills__tech">Bootstrap</li>
-              <li class="skills__tech">Tailwind Css</li>
-              <li class="skills__tech">JavaScript</li>
-              <li class="skills__tech">React</li>
-              <li class="skills__tech">Python</li>
-              <li class="skills__tech">Git</li>
-              <li class="skills__tech">Webpack</li>
-              <li class="skills__tech">Babel</li>
-            </ul>
-          </article>
-
-        </section>
-
-      </article>
-
-      <!-- <section class="links">testominals</section> -->
-      <form name="contact" method="POST" class="form" data-netlify="true" id="contacts">
-        <h2 class="form__heading">Contacts</h2>
-
-        <div class="form__container">
-
-          <div class="contact">
-            <p class="contact__text">If you have any questions, please feel me to contact me.</p>
-            <a href="https://github.com/anthonygedeon" tabindex="0"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/anthony-gedeon/" tabindex="0"><i class="fab fa-linkedin"></i></a>
-            <a tabindex="0"><i class="fas fa-file-download"></i></a>
-          </div>
-
-          <div class="inputs">
-            <label for="name">Name</label>
-              <input tabindex="0" id="name" type="text" name="name" placeholder="Incognito">
-
-            <label for="email"> E-mail</label>
-              <input tabindex="0" id="email" type="email" name="email" placeholder="Incognito@gmail.com">
-
-            <label for="#message">Message</label>
-            <textarea tabindex="0" id="message" name="message" type="text" placeholder="Your question or suggestion" cols="30" rows="7"></textarea>
-          </div>
-          
-          <button class="send" type="submit" tabindex="0">
-            <svg class="send__btn send__btn--active" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.49998 0.109408L15.4269 7.07296C15.9388 7.32893 16.1463 7.95142 15.8904 8.46335C15.7901 8.66391 15.6275 8.82653 15.4269 8.92681L1.49998 15.8904C0.988065 16.1463 0.365577 15.9388 0.109618 15.4269C-0.0394133 15.1288 -0.0360168 14.7773 0.118746 14.4822L2.97452 9.03622L10.0265 7.99989L2.97452 6.96356L0.118746 1.51762C-0.147057 1.01073 0.0483724 0.384343 0.55525 0.118536C0.850376 -0.0362279 1.20192 -0.0396246 1.49998 0.109408Z" fill="white"/>
-            </svg>
-          </button>
-        </div>
-
-
-      </form>
-
-      <footer class="footer">
-        <p class="footer__me">&copy; 2019 Anthony Gedeon - anthonygedeon.tech</p>
-      </footer>
-    </div>
-
-    <!-- Scripts -->
-    <script  type="module" src="./src/scripts/app.js"></script>
-  </body>
-
+	</body>
 </html>

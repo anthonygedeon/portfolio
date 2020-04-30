@@ -1,0 +1,18 @@
+.main-content {
+    flex: 1 0 0;
+    height: 100vh;
+
+    &__projects {
+        margin-bottom: 4em;
+    }
+
+    &__talks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 0.5rem;
+    }
+
+    &__interviews {
+        margin-top: 2em;
+    }
+}
