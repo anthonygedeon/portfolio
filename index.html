@@ -2,110 +2,214 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./src/stylesheets/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="title" content="Anthony Gedeon's Portfolio" />
+		<meta
+			name="description"
+			content="Anthony's projects, a list of youtube videos, and the talks he has done"
+		/>
+		<meta
+			name="keywords"
+			content="portfolio, personal site, programmer, coding, projects, personal works"
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="language" content="English" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/stylesheets/main.css" />
 		<title>Anthony Gedeon</title>
 	</head>
 
 	<body>
-
 		<div class="container">
 			<header class="header">
+				<div class="header__intro">
+					<h1 class="header__heading">
+						Hey, I’m
+						<span class="header__name">Anthony Gedeon.</span>
+					</h1>
+					<p class="header__text">
+						I’m a passionate and the most motivated Software
+						Engineer you'll ever meet. I mostly do front-end
+						development but sometimes like to dip my toes into the
+						backend, and I’m a React.js type of guy and who doesn't
+						fear CSS. Writing clean and maintainable code is
+						something I love doing! Also, I make YouTube videos to
+						teach others how to program.
+					</p>
 
-                <div class="header__intro">
-                    <h1 class="header__heading">Hey, I’m <span class="header__name">Anthony Gedeon.</span> </h1>
-                    <p class="header__text">I’m a passionate and the most motivated Software Engineer you'll ever meet. I mostly do front-end development but sometimes like to dip my toes into the backend, and I’m a React.js type of guy and who doesn't fear CSS. Writing clean and maintainable code is something I love doing! Also, I make YouTube videos to teach others how to program.</p>
-                    
-                    <ol class="header__categories">
-                        <li class="header__category header__category--active"><span class="header__indicator header__indicator--active"></span>Projects</li>
-                        <li class="header__category"><span class="header__indicator"></span>Talks</li>
-                        <li class="header__category"><span class="header__indicator"></span>YouTube</li>
-                    </ol>
+					<ol class="header__categories">
+						<li class="header__category header__category--active">
+							<span
+								class="header__indicator header__indicator--active"
+							></span
+							>Projects
+						</li>
+						<li class="header__category">
+							<span class="header__indicator"></span>Talks
+						</li>
+						<li class="header__category">
+							<span class="header__indicator"></span>YouTube
+						</li>
+					</ol>
 
-                    <div class="header__social-media">
-                        <div class="header__media">
-                            <a class="header__link header__link--resume" href="https://twitter.com/ant_devs">Resume</a>
-                            <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing">
-                        </div>
-                        <div class="header__media">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="16px" fill="#ffffff" class="header__icon header__icon--github"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
-                            <a class="header__link" href="https://github.com/anthonygedeon">Github</a>
-                            <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing">
-                        </div>
-                    </div>
-                </div>
-            </header>
+					<div class="header__social-media">
+						<div class="header__media">
+							<a
+								class="header__link header__link--resume"
+                                href="./src/images/resume.pdf"
+                                download
+								>Resume</a
+							>
+							<img
+								class="header__share-link"
+								src="./src/images/icons8-external-link-24.png"
+								alt="Link sharing"
+							/>
+						</div>
+						<div class="header__media">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+								width="16px"
+								fill="#ffffff"
+								class="header__icon header__icon--github"
+							>
+								<title>GitHub icon</title>
+								<path
+									d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+								></path>
+							</svg>
+							<a
+								class="header__link"
+								href="https://github.com/anthonygedeon"
+								>Github</a
+							>
+							<img
+								class="header__share-link"
+								src="./src/images/icons8-external-link-24.png"
+								alt="Link sharing"
+							/>
+						</div>
+					</div>
+				</div>
+			</header>
 
-            <main class="main-content">
+			<main class="main-content">
+				<section class="main-content__projects">
+					<a href="#" class="project">
+						<h1 class="project__technologies">JavaScript</h1>
+						<h2 class="project__title">Scribbble</h2>
+						<p class="project__description">
+							An online whiteboard where teachers and students can
+							solve problems together.
+						</p>
+						<!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star"> 3,569</p> -->
+					</a>
+					<a href="#" class="project">
+						<h1 class="project__technologies">Electron</h1>
+						<h2 class="project__title">Paper Note</h2>
+						<p class="project__description">
+							Type stories, take notes, or brainstorm your future
+							company.
+						</p>
+						<!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star">53</p> -->
+					</a>
+					<a href="#" class="project">
+						<h1 class="project__technologies">React</h1>
+						<h2 class="project__title">MangaKau</h2>
+						<p class="project__description">
+							A full-stack application that allows you to read
+							your favorite manga.
+						</p>
+						<!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star">16</p> -->
+					</a>
+					<a href="#" class="project">
+						<h1 class="project__technologies">React</h1>
+						<h2 class="project__title">Budget Me</h2>
+						<p class="project__description">
+							A tool that can assist you with your finances
+						</p>
+						<!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star">16</p> -->
+					</a>
+				</section>
 
-                <section class="main-content__projects">
-                    <a href="#" class="project">
-                        <h1 class="project__technologies">JavaScript</h1>
-                        <h2 class="project__title">Scribbble</h2>
-                        <p class="project__description">An online whiteboard where teachers and students can solve problems together.</p>
-                        <!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star"> 3,569</p> -->
-                    </a>
-                    <a href="#" class="project">
-                        <h1 class="project__technologies">Electron</h1>
-                        <h2 class="project__title">Paper Note</h2>
-                        <p class="project__description">Type stories, take notes, or brainstorm your future company.</p>
-                        <!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star">53</p> -->
-                    </a>
-                    <a href="#" class="project">
-                        <h1 class="project__technologies">React</h1>
-                        <h2 class="project__title">MangaKau</h2>
-                        <p class="project__description">A full-stack application that allows you to read your favorite manga.</p>
-                        <!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star">16</p> -->
-                    </a>
-                    <a href="#" class="project">
-                        <h1 class="project__technologies">React</h1>
-                        <h2 class="project__title">Budget Me</h2>
-                        <p class="project__description">A tool that can assist you with your finances</p>
-                        <!-- <p class="project__github-stars"><img class="project__star" src="./src/images/icons8-star-30.png" alt="star">16</p> -->
-                    </a>
-                </section>
+				<section class="main-content__talks">
+					<article class="talk">
+						<div class="talk__description">
+							<h2 class="talk__host">FRONTEND LOVE MEETUP</h2>
+							<p class="talk__location">Online</p>
+							<p class="talk__date">March 18, 2020</p>
+						</div>
+						<div class="talk__share">
+							<h2 class="talk__title">
+								Why Javascript Numbers Are Weird (And How to Fix
+								It)
+							</h2>
+							<p class="talk__info">
+								Video <img class="header__share-link"
+								src="./src/images/icons8-external-link-24.png"
+								alt="Link sharing"
+							</p>
+						</div>
+					</article>
+					<article class="talk">
+						<div class="talk__description">
+							<h2 class="talk__host">FRONTEND LOVE MEETUP</h2>
+							<p class="talk__location">Online</p>
+							<p class="talk__date">March 18, 2020</p>
+						</div>
+						<div class="talk__share">
+							<h2 class="talk__title">
+								Why Javascript Numbers Are Weird (And How to Fix
+								It)
+							</h2>
+							<p class="talk__info">
+								Video <img class="header__share-link"
+								src="./src/images/icons8-external-link-24.png"
+								alt="Link sharing"
+							</p>
+						</div>
+					</article>
+				</section>
 
-                <section class="main-content__talks">
-                    <article class="talk">
-                        <div class="talk__description">
-                            <h2 class="talk__host">FRONTEND LOVE MEETUP</h2>
-                            <p class="talk__location">Online</p>
-                            <p class="talk__date">March 18, 2020</p>
-                        </div>
-                        <div class="talk__share">
-                            <h2 class="talk__title">Why Javascript Numbers Are Weird (And How to Fix It)</h2>
-                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
-                        </div>
-                    </article>
-                    <article class="talk">
-                        <div class="talk__description">
-                            <h2 class="talk__host">FRONTEND LOVE MEETUP</h2>
-                            <p class="talk__location">Online</p>
-                            <p class="talk__date">March 18, 2020</p>
-                        </div>
-                        <div class="talk__share">
-                            <h2 class="talk__title">Why Javascript Numbers Are Weird (And How to Fix It)</h2>
-                            <p class="talk__info">Video <img class="header__share-link" src="./src/images/icons8-external-link-24.png" alt="Link sharing"</p>
-                        </div>
-                    </article>
-                </section>
-
-                <section class="main-content__interviews">
-                    <a href="#" class="interview">
-                        <div class="interview__type">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="35px" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32"><title>Volume icon</title><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"></path></svg>
-                        </div>
-                        <div class="interview__details">
-                            <h1 class="interview__title">Test Driven Development</h1>
-                            <p class="interview__description">Enjoy the Vue — With Ben Hong, Ari Clark, Tessa</p>
-                            <p class="interview__date">April 5, 2020</p>
-                        </div>
-                    </a>
-                </section>
-
-            </main>
-        </div>
-
+				<section class="main-content__interviews">
+					<a href="#" class="interview">
+						<div class="interview__type">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								width="35px"
+								stroke="#fff"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+								class="h-24 stroke-current md:h-32"
+							>
+								<title>Volume icon</title>
+								<path
+									d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"
+								></path>
+							</svg>
+						</div>
+						<div class="interview__details">
+							<h1 class="interview__title">
+								Test Driven Development
+							</h1>
+							<p class="interview__description">
+								Enjoy the Vue — With Ben Hong, Ari Clark, Tessa
+							</p>
+							<p class="interview__date">April 5, 2020</p>
+						</div>
+					</a>
+				</section>
+			</main>
+		</div>
 	</body>
 </html>
