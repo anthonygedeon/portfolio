@@ -605,7 +605,7 @@ body {
   }
   .header__categories {
     display: block;
-    margin-bottom: 25rem;
+    margin-bottom: 10rem;
   }
   .header__intro {
     position: fixed;
