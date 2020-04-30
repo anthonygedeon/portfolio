@@ -486,7 +486,7 @@ body {
 .header__heading {
   font-size: 4rem;
   font-weight: var(--font-bold);
-  line-height: 5rem;
+  line-height: 4.25rem;
   color: var(--primary-color);
   margin: 0;
 }
@@ -586,7 +586,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1030px) {
   .header {
     height: inherit;
     margin-bottom: 5em;
