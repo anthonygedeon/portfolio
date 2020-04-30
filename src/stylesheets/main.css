@@ -605,7 +605,7 @@ body {
     display: none;
   }
   .header__intro {
-    position: fixed;
+    position: static;
   }
   .header__social-media {
     margin-top: 0;
