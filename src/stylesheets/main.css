@@ -486,7 +486,7 @@ body {
 .header__heading {
   font-size: 4rem;
   font-weight: var(--font-bold);
-  line-height: 4rem;
+  line-height: 5rem;
   color: var(--primary-color);
   margin: 0;
 }
@@ -605,7 +605,7 @@ body {
     display: none;
   }
   .header__intro {
-    position: static;
+    position: fixed;
   }
   .header__social-media {
     margin-top: 0;
@@ -714,6 +714,13 @@ body {
   color: var(--primary-color);
   font-size: var(--component-body-text);
   margin: 0;
+}
+
+.interview__video {
+  margin-left: .25em;
+  width: 35px;
+  stroke-width: 1px;
+  stroke: var(--primary-color);
 }
 
 .project {

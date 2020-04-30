@@ -49,4 +49,11 @@
         font-size: var(--component-body-text);
         margin: 0;
     }
+
+    &__video {
+        margin-left: .25em;
+        width: 35px;
+        stroke-width: 1px;
+        stroke: var(--primary-color);
+    }
 }
