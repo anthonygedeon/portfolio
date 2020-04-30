@@ -16,12 +16,14 @@
         margin-top: 15em;
     }
 
+    
+
     &__media {
         display: flex;
         align-items: center;
 
-        &--middle {
-            margin: 0 2em;
+        &:first-child {
+            margin-right: 2em;
         }
     }
 
@@ -129,6 +131,7 @@
         
         &__link--resume {
             margin-left: 0;
+            
         }
         
         &__categories {

@@ -458,8 +458,8 @@ body {
           align-items: center;
 }
 
-.header__media--middle {
-  margin: 0 2em;
+.header__media:first-child {
+  margin-right: 2em;
 }
 
 .header__link {
