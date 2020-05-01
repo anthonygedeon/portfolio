@@ -40,9 +40,9 @@
 					</p>
 
 					<nav class="header__categories">
-						<a class="header__category header__category--active"><span class="header__indicator header__indicator--active"></span>Projects</a>
-						<a class="header__category"><span class="header__indicator"></span>Talks</a>
-						<a class="header__category"><span class="header__indicator"></span>YouTube</a>
+						<a href="#project-section" class="header__category"><span class="header__indicator"></span>Projects</a>
+						<a href="#talk-section" class="header__category"><span class="header__indicator"></span>Talks</a>
+						<a href="#youtube-section" class="header__category"><span class="header__indicator"></span>YouTube</a>
 					</nav>
 
 					<div class="header__social-media">
@@ -89,7 +89,7 @@
 			</header>
 
 			<main class="main-content">
-				<section class="main-content__projects">
+				<section class="main-content__projects" id="project-section">
 					<h2 class="main-content__heading">Projects</h2>
 					<a href="#" class="project">
 						<h1 class="project__technologies">JavaScript</h1>
@@ -128,7 +128,7 @@
 					</a>
 				</section>
 
-				<section class="main-content__talks">
+				<section class="main-content__talks" id="talk-section">
 					<h2 class="main-content__heading">Talks</h2>
 					<article class="talk">
 						<div class="talk__description">
@@ -140,16 +140,17 @@
 							<h2 class="talk__title">
 								Evan Bremer – Meaningful Test Coverage with IstanbulJS
 							</h2>
-							<p class="talk__info">
-								Video <a href="https://www.youtube.com/watch?v=2X_BIgWYRPc"> 
+							<a class="talk__info"href="https://www.youtube.com/watch?v=2X_BIgWYRPc"> 
+								Video 
 								<img class="header__share-link"
 								src="./src/images/icons8-external-link-24.png"
-								alt="Link sharing"</a> </p>
+								alt="Link sharing">
+							</a>
 						</div>
 					</article>
 				</section>
 
-				<section class="main-content__interviews">
+				<section class="main-content__interviews" id="youtube-section">
 					<h2 class="main-content__heading">YouTube</h2>
 					<a href="#" class="interview">
 						<div class="interview__type">

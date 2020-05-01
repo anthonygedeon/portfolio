@@ -58,7 +58,7 @@
     
     &__intro {
         position: fixed;
-        z-index: -1;
+        z-index: 10;
     }
 
     &__heading {
@@ -68,15 +68,9 @@
         color: var(--primary-color);
         margin: 0;
     }
-
-    &__categories {
-        margin-left: none;
-        padding: 0;
-    }
     
     &__category {
         display: block;
-        cursor: pointer;
         counter-increment: custom;
         color: var(--component-text-color);
         font-weight: var(--font-bold);
@@ -84,14 +78,23 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 4em;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
 
         &::before {
             content: "0" counter(custom) " ";  
         }
 
-        &--active {
-            color: var(--primary-color);
-        }
+    }
+
+    &__category:hover {
+        color: var(--primary-color);
+    }
+
+    &__category:hover &__indicator {
+        width: 3rem;
+        background-color: var(--primary-color);
     }
 
     &__indicator {
@@ -121,6 +124,16 @@
     &__name {
         display: block;
     }
+
+    // JavaScript Event Handling
+    &__category--active {
+        color: var(--primary)
+    }
+
+    &__indicator-active {
+        background-color: var(--primary-color);
+        width: 5rem;
+    }
 }
 
 // -----------------------------------------------------------------------------
@@ -129,6 +142,8 @@
 .main-content {
     flex: 1 0 0;
     height: 100vh;
+    position: relative;
+    z-index: 20;
 
     &__heading {
         text-align: left;
