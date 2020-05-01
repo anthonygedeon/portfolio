@@ -22,6 +22,11 @@
     flex-direction: column;
     justify-content: space-between;
 
+    &__special {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+
     &__social-media {
         display: flex;
         justify-content: space-between;
