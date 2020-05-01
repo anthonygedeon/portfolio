@@ -127,10 +127,10 @@
 
     // JavaScript Event Handling
     &__category--active {
-        color: var(--primary)
+        color: var(--primary-color);
     }
 
-    &__indicator-active {
+    &__indicator--active {
         background-color: var(--primary-color);
         width: 5rem;
     }
